@@ -387,6 +387,7 @@ html {
 
     --section-title-margin: 0;
     --section-title-color: var(--color-black);
+    --section-tagline-margin: 0;
 
     --section-padding: 5rem 0;
     --section-header-padding: 0 0 3rem;
@@ -402,8 +403,6 @@ html {
     --nav-item-display: inline-block;
     --nav-item-margin: 0 0 3rem 0;
     --nav-item-link-hover: var(--color-primary);
-
-    --section-tagline-margin: 0;
 }
 
 body {
@@ -489,6 +488,16 @@ a:active {
     padding: var(--footer-padding);
 }
 
+.footer-copyright {
+    margin: 0;
+    font-size: var(--font-size-small);
+    color: var(--text-color);
+}
+
+.footer ul {
+    text-align: right;
+}
+
 .navbar-menu {
     float: right;
 }
@@ -522,12 +531,6 @@ ul.row {
     margin: 0;
     padding: 0;
     list-style-type: none;
-}
-
-.row::after {
-    content: "";
-    display: table;
-    clear: both;
 }
 
 .col-1-3 {
