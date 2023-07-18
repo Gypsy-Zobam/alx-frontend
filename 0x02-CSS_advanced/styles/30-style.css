@@ -427,7 +427,7 @@ html {
     --text-color: var(--color-white);
     --section-title-color: var(--color-white);
     background-color: var(--color-black);
-    --botton-color: var(--color-white);
+    --button-color: var(--color-white);
 }
 
 body {
@@ -462,18 +462,18 @@ a:active {
 }
 
 .button {
-  display: var(--button-display);
-  padding: var(--button-padding);
-  border: var(--button-border);
-  font-size: var(--button-font-size);
-  color: var(--button-color);
-  text-decoration: var(--button-text-decoration);
+    display: var(--button-display);
+    padding: var(--button-padding);
+    border: var(--button-border);
+    font-size: var(--button-font-size);
+    color: var(--button-color);
+    text-decoration: var(--button-text-decoration);
 }
 
-.botton:hover {
-  color: var(--button-hover-color);
-  text-decoration: var(--button-hover-text-decoration);
-  background-color: var(--button-hover-background);
+.button:hover {
+    color: var(--button-hover-color);
+    text-decoration: var(--button-hover-text-decoration);
+    background-color: var(--button-hover-background);
 }
 
 .visually-hidden {
@@ -547,7 +547,7 @@ a:active {
     text-align: right;
 }
 
-.foot-address {
+.footer-address {
     color: var(--text-color);
 }
 
@@ -584,14 +584,14 @@ a:active {
   content: "";
   position: absolute;
   top: 0;
-  bottom: 0;
+  left: 0;
   background-color: var(--color-white);
   width: 0;
   height: 0.2rem;
 }
 
 .nav .nav-item:hover .nav-link::before {
-  background-color: var(--color-white);
+  background-color: var(--color-primary);
   width: 100%;
 }
 
@@ -684,7 +684,7 @@ ul.row {
   z-index: 1;
 }
 
-.card-inner:hover {
+.card-inner:hover .card-inner {
   background-color: rgba(0, 0, 0, 0.7);
 }
 
@@ -723,10 +723,9 @@ ul.row {
   position:var(--header-logo-position);
 }
 
-.a:header-logo {
+.header-logo a {
   display: var(--header-logo-link-display);
   position: var(--header-logo-link-position);
   top: var(--header-logo-link-top);
   left: var(--header-logo-link-left);
 }
-
